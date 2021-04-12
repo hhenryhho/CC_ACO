@@ -1,0 +1,39 @@
+Halifax,HL
+Cambridge,CA
+North York,NO
+Oakville,OA
+Ajax,AJAX
+Barrie,BARE
+Brampton,1304
+Burlington,BURL
+Etobicoke,ETOB
+Hamilton,HAM2
+Kanata,KANA
+Kingston,KING
+London,LOND
+Markham,MU
+Mississauga,MISS
+Newmarket,NMKT
+Oshawa,OSW
+Downtown Ottawa,OD
+Ottawa Merivale,OTT2
+Ottawa Orleans,OTT3
+Richmond Hill,R-HILL
+St Catharines,SCAT
+Downtown Toronto,C343
+Scarborough,1203
+Midtown Toronto,EGLN
+Vaughan,VAUG
+Waterloo,WATERLOO
+Whitby,WHIT
+Brossard,BS
+Marché Central,MC
+Gatineau,GT
+Laval,LAVAL
+Montréal Downtown,MO
+West Island,PTCL
+Burnaby,BN
+Port Coquitlam,CQ
+East Vancouver,GD
+Richmond,RM
+Vancouver Broadway,VC
