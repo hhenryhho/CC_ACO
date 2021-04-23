@@ -91,7 +91,7 @@
   <!-- for messageStackError -->
   <div style="display:none;">
     <div class='alertbox-med' tabindex="-1" id="messageStackError" class="messageStackError">
-      <p class="messageStackError">You are a robot.<br /></p>      <div id="error_fields" field_ids="shipping_address"></div>
+      <p class="messageStackError">We're sorry, we don't have enough stock to fulfill your order. (ITEM CODE: VCASU00233)<br /></p>      <div id="error_fields" field_ids="shipping_address"></div>
     </div>
   </div>
 
@@ -175,7 +175,7 @@
           <!--<h3 class="h4 pb-1">Current Billing Address</h3>-->
           <h3 class="h4 pb-1">Shipping Address</h3>
                     <!--<h3 class="h4 pb-1">Shipping Address</h3>-->
-                      <p>justin chu <br>97a finch ave w<br>north york, M2n2h6<br>Ontario, Canada</p>
+                      <p>karandeep singh <br>17691 Rue Arthur-Hooper<br>Pierrefonds, H9J3R3<br>Quebec, Canada</p>
                           <button type="button" class="btn navigation" onclick="_gaq.push(['_trackEvent', 'Check Out', 'Address Information', 'Update']); window.location.href='https://www.canadacomputers.com/checkout_billing_address.php';">Update</button>
                               </div>
 
@@ -184,8 +184,8 @@
           <h2>Shipping Address</h2>
 
           
-          <input type="hidden" name="ch-shiptoanother-firstname" value="justin" />
-          <input type="hidden" name="ch-shiptoanother-lastname" value="chu" />
+          <input type="hidden" name="ch-shiptoanother-firstname" value="karandeep" />
+          <input type="hidden" name="ch-shiptoanother-lastname" value="singh" />
 
           <div class="row align-items-center pt-2">
             <div class="col-lg-4 col-sm-5 text-sm-right pb-sm-1">
@@ -273,12 +273,12 @@ Please refer to our Store Locator Page for updates on current Store Hours and Se
           <h3 class="h4 mb-0">Order Summary</h3>
         </div>
         <div class="border">
-          <p>Subtotal: <span class="float-right">$919.99</span></p>
+          <p>Subtotal: <span class="float-right">$3,378.00</span></p>
           <p>Shipping Cost: <span class="float-right">$0.00</span></p>
           <p>EHF: <span class="float-right">$0.00</span></p>
-          <p>Taxes: <span class="float-right">$119.60</span></p>
+          <p>Taxes: <span class="float-right">$505.86</span></p>
           <hr>
-          <p class="h4 text-red font-weight-bold">Total: <span class="float-right">$1,039.59</span></p>
+          <p class="h4 text-red font-weight-bold">Total: <span class="float-right">$3,883.86</span></p>
                               <button type="button" class="btn btn-primary invert my-1" onclick="_gaq.push(['_trackEvent', 'Check Out', 'Address Information', 'Edit My Cart']); window.location.href='https://www.canadacomputers.com/shopping_cart.php'">EDIT MY CART</button>
         </div>
       </div>
@@ -818,10 +818,10 @@ $('#btn-lang').click(function(ev) {
 
 	/********************** cc tracking code ***************************/
 
-				$.post("/search/cc_ajax_tracking.php?customer=true", {fprint: encodeURIComponent("")}, function(resp){
+				$.post("/search/cc_ajax_tracking.php?customer=true", {fprint: encodeURIComponent("00574dca-5490-4bd4-8df1-28d235fff450")}, function(resp){
 				//alert(resp);
 			});
-		var cc_user_id = "";
+		var cc_user_id = "00574dca-5490-4bd4-8df1-28d235fff450";
     $(document).on("click", ".productImageSearch", function(event){
         event.preventDefault();
         var redirect_url = $(this).find("a").attr("href");
@@ -850,7 +850,365 @@ $('#btn-lang').click(function(ev) {
 
     /********************** end of cc tracking code ***************************/
 </script>
-<!-- checkout_shipping -->
+<div id="shopping-cart-notification" style="display:none">
+  <p class="pb-1_2">
+  <strong>The product successfully added to your shopping cart.
+  <!--<a href="https://www.canadacomputers.com/shopping_cart.php"><i class="fa fa-shopping-cart pr-1"></i>Shopping Cart (2)</a>-->
+  </strong>
+  </p>
+
+  
+  <div class="text-right mb-3">
+    <button type="button" id="btn-continue-shopping" class="btn btn-yellow" style="background: #fff;border:1px solid #ccc" onclick="$.colorbox.close();return true">Continue Shopping</button>
+    <button type="button" id="btn-cart" class="btn bg-primary btn-yellow ml-1" onclick="window.location.href='https://www.canadacomputers.com/shopping_cart.php';"><i class="fa fa-shopping-cart pr-1 text-white"></i><span class="text-white">View Cart (2)</span></button>
+    <button type="button" id="btn-checkout" class="btn btn-yellow ml-1" onclick="window.location.href='https://www.canadacomputers.com/checkout_method.php';"><i class="fa fa-lock pr-1" aria-hidden="true"></i> Checkout</button>
+  </div>
+
+    <h1 class="pt-2"><span class="text-dark">Add a Direct Replacement Plan </span><a class="font-1" href="https://www.canadacomputers.com/policies.php?page=policies-warranty-drp" target="_blank">[Learn More]</a></h1>
+  <div class="row pt-2" id="snc-warranty-plan">
+    <div class="col-md-2 pr-0">
+      <img src="https://ccimg.canadacomputers.com/Products/82x82/230/522/181841/76534.jpg" alt="ASUS ROG STRIX GeForce RTX 3090 OC 24GB GDDR6X | PCIe 4.0 DP HDMI ROG-STRIX-RTX3090-O24G-GAMING" class="w-100">
+    </div>
+
+    <div class="col-md-6">
+      <h5 class="mb-0_5 font-0_8"><strong>ASUS ROG Strix GeForce RTX 3090 OC 24GB GDDR6X</strong></h5>
+      <div class="text-grey">
+        <span class="m-0 text-small">Item Code: VCASU00224 | Part #: ROG-STRIX-RTX3090-O24G-GAMING</span>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="row">
+        <div class="col-md-3 px-0">
+          <img src="./templates/ccnew/assets/img/tech-care-badge.png" class="w-100">
+        </div>
+        <div class="col-md-9 text-dblue font-0_8">
+          <form action="">
+                        <input type="radio" id="tgaKMkwybn" name="scn_warranty" value="1066060840,322.27,181841" checked>
+              <label for="tgaKMkwybn" class="mb-0">2 Year  - <span style="font-weight:600;">$322.27</span></label><br>
+                        <input type="radio" id="VEXYEK3MKF" name="scn_warranty" value="1066060889,371.85,181841">
+              <label for="VEXYEK3MKF" class="mb-0">3 Year  - <span style="font-weight:600;">$371.85</span></label><br>
+                      <!-- <input type="radio" id="1-year" name="warranty" value="1-year">
+            <label for="1-year" class="mb-0">1 Year - <span style="font-weight:600;">$3.99</span></label><br>
+            <input type="radio" id="2-year" name="warranty" value="2-year">
+            <label for="2-year" class="mb-0">2 Years - <span style="font-weight:600;">$4.99</span></label><br>
+            <input type="radio" id="3-year" name="warranty" value="3-year">
+            <label for="3-year">3 Years - <span style="font-weight:600;">$5.99</span></label><br> -->
+
+            <button type="button" class="btn bg-primary btn-yellow btn-cart-warranty w-100 px-0 mt-2 text-center"><span class="text-white">Add Plan to Item</span></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <p class="clearfloat" style="height:15px"></p>
+  <section class="shopping-cart-notification-recommandations">
+    <h1>Featured Recommendations</h1>
+    <ul class="col4">
+            <li>
+        <a href="https://www.canadacomputers.com/product_info.php?cPath=26_1832_1833&item_id=183106" class="product-info" onclick="_gaq.push(['_trackEvent', 'Shopping Cart - Product', 'Featured Recommendations', 'MBGIG00213'])">
+          <span class="product-img"><img src="https://ccimg.canadacomputers.com/Products/105x105/125/1445/183106/80707.jpg" width="105" height="105" alt="GIGABYTE B550M AORUS PRO-P (rev. 1.0), AMD AM4 B550, DDR4, Dual channel, PCIe 4.0 x16 Slot, Dual PCIe 4.0/3.0 x4 M.2 with One Thermal Guard, 2.5GbE LAN (B550M AORUS PRO-P)"></span>
+                    <span class="price-original">$169.99</span>
+          <span class="price-sale">$139.99</span>
+          <span class="price-savings">
+            <span class="ir">Save $30.00</span>
+          </span>
+                    <span class="promo-period">Sale ends Apr 30, 2021</span>
+                              <span class="product-description">GIGABYTE B550M AORUS PRO-P (rev. 1.0), AMD AM4 B550, DDR4, Dual channel, PCIe 4.0 x16 Slot, Dual PCIe 4.0/3.0 x4 M.2 with One Thermal Guard, 2.5GbE LAN (B550M AORUS PRO-P)</span>
+        </a>
+                <br />
+        <a href="https://www.canadacomputers.com/index.php?action=buy_now&item_id=183106&limit=0" onclick="_paq.push(['trackEvent', 'shopping_cart', 'putIntoCart_productFeaturedRecommendations', '183106']);_gaq.push(['_trackEvent', 'Shopping Cart - Product', 'Featured Recommendations', 'Add to Cart - MBGIG00213'])"><button class="btn-addtocart">Add to Cart</button></a>
+              </li>
+            <li>
+        <a href="https://www.canadacomputers.com/product_info.php?cPath=8_135&item_id=165241" class="product-info" onclick="_gaq.push(['_trackEvent', 'Shopping Cart - Product', 'Featured Recommendations', 'COENM00013'])">
+          <span class="product-img"><img src="https://ccimg.canadacomputers.com/Products/105x105/232/390/165241/96671.jpg" width="105" height="105" alt="ENERMAX AQUAFUSION 240 SquA RGB fan Black All-in-one CPU Liquid Cooler (ELC-AQF240-SQA)"></span>
+                    <span class="price-original">$134.99</span>
+          <span class="price-sale">$114.99</span>
+          <span class="price-savings">
+            <span class="ir">Save $20.00</span>
+          </span>
+                    <span class="promo-period">Sale ends Apr 30, 2021</span>
+                              <span class="product-description">ENERMAX AQUAFUSION 240 SquA RGB fan Black All-in-one CPU Liquid Cooler (ELC-AQF240-SQA)</span>
+        </a>
+                <br />
+        <a href="https://www.canadacomputers.com/index.php?action=buy_now&item_id=165241&limit=0" onclick="_paq.push(['trackEvent', 'shopping_cart', 'putIntoCart_productFeaturedRecommendations', '165241']);_gaq.push(['_trackEvent', 'Shopping Cart - Product', 'Featured Recommendations', 'Add to Cart - COENM00013'])"><button class="btn-addtocart">Add to Cart</button></a>
+              </li>
+            <li>
+        <a href="https://www.canadacomputers.com/product_info.php?cPath=4_64_1969&item_id=158362" class="product-info" onclick="_gaq.push(['_trackEvent', 'Shopping Cart - Product', 'Featured Recommendations', 'CPAMD00069'])">
+          <span class="product-img"><img src="https://ccimg.canadacomputers.com/Products/105x105/240/381/158362/06234.jpg" width="105" height="105" alt="AMD Ryzen 9 3950X 16-Core/32-Thread 7nm Processor | Socket AM4 3.5GHz/ 4.7 GHz Boost 105W (100-100000051WOF)"></span>
+                    <span class="price-original">$1,099.00</span>
+          <span class="price-sale">$949.00</span>
+          <span class="price-savings">
+            <span class="ir">Save $150.00</span>
+          </span>
+                    <span class="promo-period">Sale ends Jun 26, 2021</span>
+                              <span class="product-description">AMD Ryzen 9 3950X 16-Core/32-Thread 7nm Processor | Socket AM4 3.5GHz/ 4.7 GHz Boost 105W (100-100000051WOF)</span>
+        </a>
+                <br />
+        <a href="https://www.canadacomputers.com/index.php?action=buy_now&item_id=158362&limit=0" onclick="_paq.push(['trackEvent', 'shopping_cart', 'putIntoCart_productFeaturedRecommendations', '158362']);_gaq.push(['_trackEvent', 'Shopping Cart - Product', 'Featured Recommendations', 'Add to Cart - CPAMD00069'])"><button class="btn-addtocart">Add to Cart</button></a>
+              </li>
+            <li>
+        <a href="https://www.canadacomputers.com/product_info.php?cPath=21_1204&item_id=121031" class="product-info" onclick="_gaq.push(['_trackEvent', 'Shopping Cart - Product', 'Featured Recommendations', 'KMCOI00028'])">
+          <span class="product-img"><img src="https://ccimg.canadacomputers.com/Products/105x105/276/826/121031/49093.jpg" width="105" height="105" alt="Corsair (refurbished) SCIMITAR PRO RGB  Optical MOBA Gaming Mouse | Yellow, Backlit RGB LED, 16000 DPI, Mechanical side button, Optical (CH-9304011-WW/RF)"></span>
+                    <span class="price-original">$99.99</span>
+          <span class="price-sale">$74.99</span>
+          <span class="price-savings">
+            <span class="ir">Save $25.00</span>
+          </span>
+                    <span class="promo-period">Sale ends Apr 22, 2021</span>
+                              <span class="product-description">Corsair (refurbished) SCIMITAR PRO RGB  Optical MOBA Gaming Mouse | Yellow, Backlit RGB LED, 16000 DPI, Mechanical side button, Optical (CH-9304011-WW/RF)</span>
+        </a>
+                <br />
+        <a href="https://www.canadacomputers.com/index.php?action=buy_now&item_id=121031&limit=0" onclick="_paq.push(['trackEvent', 'shopping_cart', 'putIntoCart_productFeaturedRecommendations', '121031']);_gaq.push(['_trackEvent', 'Shopping Cart - Product', 'Featured Recommendations', 'Add to Cart - KMCOI00028'])"><button class="btn-addtocart">Add to Cart</button></a>
+              </li>
+          <ul>
+  </section>
+  </div>
+<style type="text/css">
+.alertbox-xlrg {
+  min-height:100px !important;
+  width: 700px;
+  position: relative;
+  padding: 25px;
+  text-align: left;
+  overflow: hidden;
+  border: 0;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+}
+.alertbox-xlrg h1 {
+  font-size:1.4em;
+  line-height: 1.1em;
+  font-weight: bold;
+  margin: -5px 0 10px 0;
+  padding-bottom: 10px;
+  color: #2d2d2d;
+  border-bottom: 1px solid #dddddd;
+  width: 100%;
+}
+.alertbox-xlrg a{
+  color:#007FFF;
+}
+.alertbox-xlrg .btn{
+  box-shadow: 1px 1px 1px #999999;
+  border:none;
+}
+
+section.shopping-cart-notification-recommandations {
+	margin: 1em 0 0 0;
+	padding: 0;
+}
+
+section.shopping-cart-notification-recommandations ul.col4 {
+	width:100%;
+}
+
+section.shopping-cart-notification-recommandations ul.col4 li {
+	float: left;
+	width:21%;
+  overflow:hidden;
+  position:relative;
+  margin:1em 0.79em 1.6em;
+  height:355px;
+}
+
+section.shopping-cart-notification-recommandations ul.col4 li.last-col:after {
+	content: '';
+	clear: both;
+}
+
+
+section.shopping-cart-notification-recommandations ul.col4 li a.product-info {
+	display: block;
+	text-decoration: none;
+	color: #333;
+}
+
+section.shopping-cart-notification-recommandations ul.col4 li a.product-info span.product-img {
+	display: block;
+	width:140px;
+	height:115px;
+	position:relative;
+	margin: 0 auto 0.5em auto;
+}
+
+section.shopping-cart-notification-recommandations ul.col4 li a.product-info span.product-img img {
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+  object-fit: none;
+  object-position: 50% 50%;
+  width: 105px;
+  height: 105px;
+}
+
+section.shopping-cart-notification-recommandations ul.col4 li a.product-info span {
+	display: block;
+	line-height: 1.3em;
+}
+
+section.shopping-cart-notification-recommandations ul.col4 li a.product-info span.price-original,
+section.shopping-cart-notification-recommandations ul.col4 li a.product-info span.promo-period,
+section.shopping-cart-notification-recommandations ul.col4 li a.product-info span.ir {
+  font-size:0.7em;
+}
+
+section.shopping-cart-notification-recommandations ul.col4 li a.product-info span.price-original {
+  text-decoration: line-through;
+}
+
+section.shopping-cart-notification-recommandations ul.col4 li a.product-info span.ir {
+  color:#e80000;
+}
+
+section.shopping-cart-notification-recommandations ul.col4 li a.product-info span.price-regular,
+section.shopping-cart-notification-recommandations ul.col4 li a.product-info span.price-sale {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+section.shopping-cart-notification-recommandations ul.col4 li a.product-info span.price-sale {
+  color: #e80000;
+}
+
+section.shopping-cart-notification-recommandations ul.col4 li a.product-info span.promo-period {
+  margin: 0.5em 0;
+}
+
+section.shopping-cart-notification-recommandations ul.col4 li a.product-info span.product-description {
+	margin:0.5em 0;
+  font-size:14px;
+  line-height: normal !important;
+  height:76px;
+  overflow: hidden;
+}
+
+section.shopping-cart-notification-recommandations ul.col4 li a button.btn-addtocart {
+  position: absolute;
+  bottom: 5px;
+  background-color: #fd0;
+  border: 1px solid #fd0;
+  -moz-box-shadow: 1px 2px 0 #e4e4e4;
+  -webkit-box-shadow: 1px 2px 0 #e4e4e4;
+  box-shadow: 1px 2px 0 #e4e4e4;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  margin: 3px 0 3px 0;
+  width:100%;
+  height:32px;
+  font-weight: 500;
+  font-size:0.8em;
+}
+
+.yellow-btn-addtocart {
+  bottom: 5px;
+  background-color: #fd0;
+  border: 1px solid #fd0;
+  -moz-box-shadow: 1px 2px 0 #e4e4e4;
+  -webkit-box-shadow: 1px 2px 0 #e4e4e4;
+  box-shadow: 1px 2px 0 #e4e4e4;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  margin: 3px 0 3px 0;
+  width: 60%;
+  height: 32px;
+  font-weight: 500;
+  font-size: 0.8em;
+}
+</style>
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function(event) {
+  $(document).ready(function(){
+    // load scroll position if previous action is a shopping cart action
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0)==' ') c = c.substring(1,c.length);
+      if (c.indexOf('last_cart_item_id') == 0) {
+        document.cookie = "last_cart_item_id=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=www.canadacomputers.com; path=/;";
+
+        if (sessionStorage["scrollPosition_" + document.location.pathname]) {
+          $(document).scrollTop(sessionStorage.getItem("scrollPosition_" + document.location.pathname));
+          sessionStorage.clear();
+        }
+
+        $.colorbox({
+          scrolling: false,
+          height: 300,
+          html: "<div class='alertbox-xlrg'><p>"+$('#shopping-cart-notification').html()+"</p></div>",
+          onComplete: function() {
+            $(this).colorbox.resize();
+            $('#shopping-cart-notification').html('');
+          },
+          onLoad: function() {
+            $('#cboxClose').remove();
+          }
+        });
+      }
+    }
+
+    $('.btn-cart-warranty').on('click', function (event) {
+      //console.log('asdad');
+      event.preventDefault();
+      if ($('input[name=scn_warranty]').is(':checked') === true) {
+        var e = $('input[name=scn_warranty]:checked');
+        var warrantyCode = e.prop('id');
+
+        var warrantyValue = e.val();
+        var warrantyArray = warrantyValue.split(',');
+        var objectId = warrantyArray[0];
+        var warrantyAmount = warrantyArray[1];
+        var itemId = warrantyArray[2];
+
+        $.ajax({
+          url: 'https://www.canadacomputers.com/index.php',
+          type: "GET",
+          dataType: 'json',
+          async: false,
+          data: {
+            'action' : 'add_warranty',
+            'item0': itemId,
+            'qty0': 0,
+            'objectId': objectId,
+            'warrantyCode': warrantyCode,
+            'itemId': itemId,
+            'warrantyAmount': warrantyAmount,
+          },
+          error: function () {
+            $.colorbox({
+              scrolling:false,
+              html: "<div class='alertbox-lrg p-2 d-flex align-items-center flex-wrap h-100'><div><h3>Sorry, we are having trouble providing you with available times. Please try it again later</h3><div><button class='btn-nav-sml btn w-25 mt-1 text-center bg-primary text-white' onclick='$.colorbox.close()'>Okay</button></div></div></div>"
+            });
+            return false;
+          },
+          success: function (data) {
+            var response = JSON.parse(JSON.stringify(data));
+            if (response.error == true) {
+              $.colorbox({
+                scrolling:false,
+                html: "<div class='alertbox-lrg p-2 d-flex align-items-center flex-wrap h-100'><div><h3>" + response.error_message + "</h3><div><button class='btn-nav-sml btn w-25 mt-1 text-center bg-primary text-white' onclick='$.colorbox.close()'>Okay</button></div></div></div>"
+              });
+            } else {
+              //$('#snc-warranty-plan').html(response.error_message);
+              $.colorbox({
+                scrolling:false,
+                html: "<div class='alertbox-lrg p-2 d-flex align-items-center flex-wrap h-100'><div><h3>" + response.error_message + "</h3><div><button class='btn-nav-sml btn w-25 mt-1 text-center bg-primary text-white' onclick='$.colorbox.close()'>Okay</button></div></div></div>"
+              });
+            }
+          }
+        });
+      }
+    });
+  });
+});
+</script><!-- checkout_shipping -->
 </body>
 </html>
 <div id="debug_output" style="display:none"></div><script>console.log($("#debug_output").html());</script>

@@ -5,6 +5,7 @@
 
 import scrapy
 
+
 class CC_Product(scrapy.Item):
     name = scrapy.Field()
     img = scrapy.Field()

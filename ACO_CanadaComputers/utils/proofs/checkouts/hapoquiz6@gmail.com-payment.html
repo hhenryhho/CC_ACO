@@ -139,7 +139,7 @@
           <div class="row pt-1">
                         <div class="col-sm-6">
               <h5 class="mb-1">Pick Up Location</h5>
-              <p>Scarborough <br>1306 Kennedy Road<br>Scarborough, M1P 2L5<br>Ontario, Canada</p>
+              <p>Markham <br>3828 Highway 7<br>Markham, L3R 1L7<br>Ontario, Canada</p>
               <button type="button" class="btn navigation" onclick="_gaq.push(['_trackEvent', 'Check Out', 'Confirmation', 'Edit Pick Up Location']); window.location.replace('https://www.canadacomputers.com/checkout_shipping.php')">Edit Pick Up Location</button>
             </div>
                                                 <div class="col-12 py-1">
@@ -148,7 +148,7 @@
             <div class="col-12">
               <h5 class="mb-1">Additional Information</h5>
               <p class="mb-0">
-              (647)374-5952<br />Justicechu09@gmail.com<br />Last 4 digits of credit/debit card: <b>4157</b><br />First 4 letters of last name as displayed on credit/debit card or Government-issued ID: <b>Chu</b><br />              </p>
+              (343)559-8311<br />hapoquiz6@gmail.com<br />Last 4 digits of credit/debit card: <b>1896</b><br />First 4 letters of last name as displayed on credit/debit card or Government-issued ID: <b>Poqu</b><br />              </p>
             </div>
                         <div class="col-12 py-1">
               <hr>
@@ -156,9 +156,9 @@
             <div class="col-12">
               <h5 class="mb-1">Customer Information</h5>
               <p>
-                justin chu<br />
-                (647)374-5952<br />
-                justicechu09@gmail.com              </p>
+                Henry Agustine Poquiz<br />
+                (249)849-0875<br />
+                hapoquiz6@gmail.com              </p>
             </div>
           </div>
         </div>
@@ -185,7 +185,7 @@
           </div>-->
                               <div class="row no-gutters bg-grey align-items-center mx-0 table-check">
             <div class="col-sm-6 pr-2">
-              MSI GeForce RTX 3070 GAMING X TRIO, 8GB GDDR6, 1830 MHZ Boost Clock, PCIe 4.0, 256-Bit, 1 x HDMI 2.1, 3 x DisplayPort 1.4a, 8-pin x2            </div>
+              ASUS TUF Gaming GeForce GTX 1660 SUPER Overclocked 6GB | 1845 MHz Boost, 14002 MHz Memory | HDMI 2.0b, DP 1.4, DVI-D | TUF-GTX1660S-O6G-GAMING)            </div>
             <div class="col-sm-1 text-sm-center pt-1 pt-sm-0">
               <span class="d-sm-none">Qty: </span>1            </div>
             <div class="col-sm-3 text-sm-center">
@@ -634,10 +634,10 @@ $('#btn-lang').click(function(ev) {
 
 	/********************** cc tracking code ***************************/
 
-				$.post("/search/cc_ajax_tracking.php?customer=true", {fprint: encodeURIComponent("")}, function(resp){
+				$.post("/search/cc_ajax_tracking.php?customer=true", {fprint: encodeURIComponent("19f0a38c-c460-4dc2-94cc-4f46e6b32b21")}, function(resp){
 				//alert(resp);
 			});
-		var cc_user_id = "";
+		var cc_user_id = "19f0a38c-c460-4dc2-94cc-4f46e6b32b21";
     $(document).on("click", ".productImageSearch", function(event){
         event.preventDefault();
         var redirect_url = $(this).find("a").attr("href");
@@ -666,7 +666,365 @@ $('#btn-lang').click(function(ev) {
 
     /********************** end of cc tracking code ***************************/
 </script>
-<!-- checkout_confirmation -->
+<div id="shopping-cart-notification" style="display:none">
+  <p class="pb-1_2">
+  <strong>The product successfully added to your shopping cart.
+  <!--<a href="https://www.canadacomputers.com/shopping_cart.php"><i class="fa fa-shopping-cart pr-1"></i>Shopping Cart (1)</a>-->
+  </strong>
+  </p>
+
+  
+  <div class="text-right mb-3">
+    <button type="button" id="btn-continue-shopping" class="btn btn-yellow" style="background: #fff;border:1px solid #ccc" onclick="$.colorbox.close();return true">Continue Shopping</button>
+    <button type="button" id="btn-cart" class="btn bg-primary btn-yellow ml-1" onclick="window.location.href='https://www.canadacomputers.com/shopping_cart.php';"><i class="fa fa-shopping-cart pr-1 text-white"></i><span class="text-white">View Cart (1)</span></button>
+    <button type="button" id="btn-checkout" class="btn btn-yellow ml-1" onclick="window.location.href='https://www.canadacomputers.com/checkout_method.php';"><i class="fa fa-lock pr-1" aria-hidden="true"></i> Checkout</button>
+  </div>
+
+    <h1 class="pt-2"><span class="text-dark">Add a Direct Replacement Plan </span><a class="font-1" href="https://www.canadacomputers.com/policies.php?page=policies-warranty-drp" target="_blank">[Learn More]</a></h1>
+  <div class="row pt-2" id="snc-warranty-plan">
+    <div class="col-md-2 pr-0">
+      <img src="https://ccimg.canadacomputers.com/Products/82x82/230/522/159622/70544.jpg" alt="ASUS TUF Gaming GeForce GTX 1660 SUPER Overclocked 6GB | 1845 MHz Boost, 14002 MHz Memory | HDMI 2.0b, DP 1.4, DVI-D | TUF-GTX1660S-O6G-GAMING)" class="w-100">
+    </div>
+
+    <div class="col-md-6">
+      <h5 class="mb-0_5 font-0_8"><strong>ASUS TUF Gaming GeForce GTX 1660 SUPER Overclocked 6GB 1845 MHz Boost</strong></h5>
+      <div class="text-grey">
+        <span class="m-0 text-small">Item Code: VCASU00183 | Part #: TUF-GTX1660S-O6G-GAMING</span>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="row">
+        <div class="col-md-3 px-0">
+          <img src="./templates/ccnew/assets/img/tech-care-badge.png" class="w-100">
+        </div>
+        <div class="col-md-9 text-dblue font-0_8">
+          <form action="">
+                        <input type="radio" id="9hQVkx8tWX" name="scn_warranty" value="1066060840,50.57,159622" checked>
+              <label for="9hQVkx8tWX" class="mb-0">2 Year  - <span style="font-weight:600;">$50.57</span></label><br>
+                        <input type="radio" id="8dGXrQjfXF" name="scn_warranty" value="1066060889,58.35,159622">
+              <label for="8dGXrQjfXF" class="mb-0">3 Year  - <span style="font-weight:600;">$58.35</span></label><br>
+                      <!-- <input type="radio" id="1-year" name="warranty" value="1-year">
+            <label for="1-year" class="mb-0">1 Year - <span style="font-weight:600;">$3.99</span></label><br>
+            <input type="radio" id="2-year" name="warranty" value="2-year">
+            <label for="2-year" class="mb-0">2 Years - <span style="font-weight:600;">$4.99</span></label><br>
+            <input type="radio" id="3-year" name="warranty" value="3-year">
+            <label for="3-year">3 Years - <span style="font-weight:600;">$5.99</span></label><br> -->
+
+            <button type="button" class="btn bg-primary btn-yellow btn-cart-warranty w-100 px-0 mt-2 text-center"><span class="text-white">Add Plan to Item</span></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <p class="clearfloat" style="height:15px"></p>
+  <section class="shopping-cart-notification-recommandations">
+    <h1>Featured Recommendations</h1>
+    <ul class="col4">
+            <li>
+        <a href="https://www.canadacomputers.com/product_info.php?cPath=710_1925_1912_1909&item_id=185340" class="product-info" onclick="_gaq.push(['_trackEvent', 'Shopping Cart - Product', 'Featured Recommendations', 'LPLEN01737'])">
+          <span class="product-img"><img src="https://ccimg.canadacomputers.com/Products/105x105/135/185340/40156.jpg" width="105" height="105" alt="Lenovo Ideapad Flex 5 2 in 1 Notebook | 14'' FHD Touchscreen Intel Core i5-1035G1, 8GB DDR4, 256GB SSD | Windows 10, 81X100MBCC"></span>
+                    <span class="price-original">$899.00</span>
+          <span class="price-sale">$779.00</span>
+          <span class="price-savings">
+            <span class="ir">Save $120.00</span>
+          </span>
+                    <span class="promo-period">Sale ends Apr 22, 2021</span>
+                              <span class="product-description">Lenovo Ideapad Flex 5 2 in 1 Notebook | 14'' FHD Touchscreen Intel Core i5-1035G1, 8GB DDR4, 256GB SSD | Windows 10, 81X100MBCC</span>
+        </a>
+                <br />
+        <a href="https://www.canadacomputers.com/index.php?action=buy_now&item_id=185340&limit=0" onclick="_paq.push(['trackEvent', 'shopping_cart', 'putIntoCart_productFeaturedRecommendations', '185340']);_gaq.push(['_trackEvent', 'Shopping Cart - Product', 'Featured Recommendations', 'Add to Cart - LPLEN01737'])"><button class="btn-addtocart">Add to Cart</button></a>
+              </li>
+            <li>
+        <a href="https://www.canadacomputers.com/product_info.php?cPath=26_1832_1833&item_id=183106" class="product-info" onclick="_gaq.push(['_trackEvent', 'Shopping Cart - Product', 'Featured Recommendations', 'MBGIG00213'])">
+          <span class="product-img"><img src="https://ccimg.canadacomputers.com/Products/105x105/125/1445/183106/80707.jpg" width="105" height="105" alt="GIGABYTE B550M AORUS PRO-P (rev. 1.0), AMD AM4 B550, DDR4, Dual channel, PCIe 4.0 x16 Slot, Dual PCIe 4.0/3.0 x4 M.2 with One Thermal Guard, 2.5GbE LAN (B550M AORUS PRO-P)"></span>
+                    <span class="price-original">$169.99</span>
+          <span class="price-sale">$139.99</span>
+          <span class="price-savings">
+            <span class="ir">Save $30.00</span>
+          </span>
+                    <span class="promo-period">Sale ends Apr 30, 2021</span>
+                              <span class="product-description">GIGABYTE B550M AORUS PRO-P (rev. 1.0), AMD AM4 B550, DDR4, Dual channel, PCIe 4.0 x16 Slot, Dual PCIe 4.0/3.0 x4 M.2 with One Thermal Guard, 2.5GbE LAN (B550M AORUS PRO-P)</span>
+        </a>
+                <br />
+        <a href="https://www.canadacomputers.com/index.php?action=buy_now&item_id=183106&limit=0" onclick="_paq.push(['trackEvent', 'shopping_cart', 'putIntoCart_productFeaturedRecommendations', '183106']);_gaq.push(['_trackEvent', 'Shopping Cart - Product', 'Featured Recommendations', 'Add to Cart - MBGIG00213'])"><button class="btn-addtocart">Add to Cart</button></a>
+              </li>
+            <li>
+        <a href="https://www.canadacomputers.com/product_info.php?cPath=4_65_1971&item_id=167678" class="product-info" onclick="_gaq.push(['_trackEvent', 'Shopping Cart - Product', 'Featured Recommendations', 'CPINT00129'])">
+          <span class="product-img"><img src="https://ccimg.canadacomputers.com/Products/105x105/240/384/167678/30320.jpg" width="105" height="105" alt="Intel Core i7-10700K 8-Core 16-Thread Desktop Processor Unlocked | Socket LGA 1200 (400 Series) , 3.8 GHz Base 5.1 GHz Turbo | 125W 10th Gen Retail Boxed (BX8070110700K)"></span>
+                    <span class="price-original">$459.00</span>
+          <span class="price-sale">$399.00</span>
+          <span class="price-savings">
+            <span class="ir">Save $60.00</span>
+          </span>
+                    <span class="promo-period">Sale ends Apr 22, 2021</span>
+                              <span class="product-description">Intel Core i7-10700K 8-Core 16-Thread Desktop Processor Unlocked | Socket LGA 1200 (400 Series) , 3.8 GHz Base 5.1 GHz Turbo | 125W 10th Gen Retail Boxed (BX8070110700K)</span>
+        </a>
+                <br />
+        <a href="https://www.canadacomputers.com/index.php?action=buy_now&item_id=167678&limit=2" onclick="_paq.push(['trackEvent', 'shopping_cart', 'putIntoCart_productFeaturedRecommendations', '167678']);_gaq.push(['_trackEvent', 'Shopping Cart - Product', 'Featured Recommendations', 'Add to Cart - CPINT00129'])"><button class="btn-addtocart">Add to Cart</button></a>
+              </li>
+            <li>
+        <a href="https://www.canadacomputers.com/product_info.php?cPath=26_1842_1846&item_id=128503" class="product-info" onclick="_gaq.push(['_trackEvent', 'Shopping Cart - Product', 'Featured Recommendations', 'MBASU00211'])">
+          <span class="product-img"><img src="https://ccimg.canadacomputers.com/Products/105x105/125/1355/128503/19427.jpg" width="105" height="105" alt="ASUS Prime Z390-A Motherboard LGA1151 (Intel 8th and 9th Gen) ATX DDR4 DP HDMI M.2 USB 3.1 Gen2 Gigabit LAN"></span>
+                    <span class="price-original">$259.00</span>
+          <span class="price-sale">$209.00</span>
+          <span class="price-savings">
+            <span class="ir">Save $50.00</span>
+          </span>
+                    <span class="promo-period">Sale ends Apr 22, 2021</span>
+                              <span class="product-description">ASUS Prime Z390-A Motherboard LGA1151 (Intel 8th and 9th Gen) ATX DDR4 DP HDMI M.2 USB 3.1 Gen2 Gigabit LAN</span>
+        </a>
+                <br />
+        <a href="https://www.canadacomputers.com/index.php?action=buy_now&item_id=128503&limit=0" onclick="_paq.push(['trackEvent', 'shopping_cart', 'putIntoCart_productFeaturedRecommendations', '128503']);_gaq.push(['_trackEvent', 'Shopping Cart - Product', 'Featured Recommendations', 'Add to Cart - MBASU00211'])"><button class="btn-addtocart">Add to Cart</button></a>
+              </li>
+          <ul>
+  </section>
+  </div>
+<style type="text/css">
+.alertbox-xlrg {
+  min-height:100px !important;
+  width: 700px;
+  position: relative;
+  padding: 25px;
+  text-align: left;
+  overflow: hidden;
+  border: 0;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+}
+.alertbox-xlrg h1 {
+  font-size:1.4em;
+  line-height: 1.1em;
+  font-weight: bold;
+  margin: -5px 0 10px 0;
+  padding-bottom: 10px;
+  color: #2d2d2d;
+  border-bottom: 1px solid #dddddd;
+  width: 100%;
+}
+.alertbox-xlrg a{
+  color:#007FFF;
+}
+.alertbox-xlrg .btn{
+  box-shadow: 1px 1px 1px #999999;
+  border:none;
+}
+
+section.shopping-cart-notification-recommandations {
+	margin: 1em 0 0 0;
+	padding: 0;
+}
+
+section.shopping-cart-notification-recommandations ul.col4 {
+	width:100%;
+}
+
+section.shopping-cart-notification-recommandations ul.col4 li {
+	float: left;
+	width:21%;
+  overflow:hidden;
+  position:relative;
+  margin:1em 0.79em 1.6em;
+  height:355px;
+}
+
+section.shopping-cart-notification-recommandations ul.col4 li.last-col:after {
+	content: '';
+	clear: both;
+}
+
+
+section.shopping-cart-notification-recommandations ul.col4 li a.product-info {
+	display: block;
+	text-decoration: none;
+	color: #333;
+}
+
+section.shopping-cart-notification-recommandations ul.col4 li a.product-info span.product-img {
+	display: block;
+	width:140px;
+	height:115px;
+	position:relative;
+	margin: 0 auto 0.5em auto;
+}
+
+section.shopping-cart-notification-recommandations ul.col4 li a.product-info span.product-img img {
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+  object-fit: none;
+  object-position: 50% 50%;
+  width: 105px;
+  height: 105px;
+}
+
+section.shopping-cart-notification-recommandations ul.col4 li a.product-info span {
+	display: block;
+	line-height: 1.3em;
+}
+
+section.shopping-cart-notification-recommandations ul.col4 li a.product-info span.price-original,
+section.shopping-cart-notification-recommandations ul.col4 li a.product-info span.promo-period,
+section.shopping-cart-notification-recommandations ul.col4 li a.product-info span.ir {
+  font-size:0.7em;
+}
+
+section.shopping-cart-notification-recommandations ul.col4 li a.product-info span.price-original {
+  text-decoration: line-through;
+}
+
+section.shopping-cart-notification-recommandations ul.col4 li a.product-info span.ir {
+  color:#e80000;
+}
+
+section.shopping-cart-notification-recommandations ul.col4 li a.product-info span.price-regular,
+section.shopping-cart-notification-recommandations ul.col4 li a.product-info span.price-sale {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+section.shopping-cart-notification-recommandations ul.col4 li a.product-info span.price-sale {
+  color: #e80000;
+}
+
+section.shopping-cart-notification-recommandations ul.col4 li a.product-info span.promo-period {
+  margin: 0.5em 0;
+}
+
+section.shopping-cart-notification-recommandations ul.col4 li a.product-info span.product-description {
+	margin:0.5em 0;
+  font-size:14px;
+  line-height: normal !important;
+  height:76px;
+  overflow: hidden;
+}
+
+section.shopping-cart-notification-recommandations ul.col4 li a button.btn-addtocart {
+  position: absolute;
+  bottom: 5px;
+  background-color: #fd0;
+  border: 1px solid #fd0;
+  -moz-box-shadow: 1px 2px 0 #e4e4e4;
+  -webkit-box-shadow: 1px 2px 0 #e4e4e4;
+  box-shadow: 1px 2px 0 #e4e4e4;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  margin: 3px 0 3px 0;
+  width:100%;
+  height:32px;
+  font-weight: 500;
+  font-size:0.8em;
+}
+
+.yellow-btn-addtocart {
+  bottom: 5px;
+  background-color: #fd0;
+  border: 1px solid #fd0;
+  -moz-box-shadow: 1px 2px 0 #e4e4e4;
+  -webkit-box-shadow: 1px 2px 0 #e4e4e4;
+  box-shadow: 1px 2px 0 #e4e4e4;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  margin: 3px 0 3px 0;
+  width: 60%;
+  height: 32px;
+  font-weight: 500;
+  font-size: 0.8em;
+}
+</style>
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function(event) {
+  $(document).ready(function(){
+    // load scroll position if previous action is a shopping cart action
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0)==' ') c = c.substring(1,c.length);
+      if (c.indexOf('last_cart_item_id') == 0) {
+        document.cookie = "last_cart_item_id=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=www.canadacomputers.com; path=/;";
+
+        if (sessionStorage["scrollPosition_" + document.location.pathname]) {
+          $(document).scrollTop(sessionStorage.getItem("scrollPosition_" + document.location.pathname));
+          sessionStorage.clear();
+        }
+
+        $.colorbox({
+          scrolling: false,
+          height: 300,
+          html: "<div class='alertbox-xlrg'><p>"+$('#shopping-cart-notification').html()+"</p></div>",
+          onComplete: function() {
+            $(this).colorbox.resize();
+            $('#shopping-cart-notification').html('');
+          },
+          onLoad: function() {
+            $('#cboxClose').remove();
+          }
+        });
+      }
+    }
+
+    $('.btn-cart-warranty').on('click', function (event) {
+      //console.log('asdad');
+      event.preventDefault();
+      if ($('input[name=scn_warranty]').is(':checked') === true) {
+        var e = $('input[name=scn_warranty]:checked');
+        var warrantyCode = e.prop('id');
+
+        var warrantyValue = e.val();
+        var warrantyArray = warrantyValue.split(',');
+        var objectId = warrantyArray[0];
+        var warrantyAmount = warrantyArray[1];
+        var itemId = warrantyArray[2];
+
+        $.ajax({
+          url: 'https://www.canadacomputers.com/index.php',
+          type: "GET",
+          dataType: 'json',
+          async: false,
+          data: {
+            'action' : 'add_warranty',
+            'item0': itemId,
+            'qty0': 0,
+            'objectId': objectId,
+            'warrantyCode': warrantyCode,
+            'itemId': itemId,
+            'warrantyAmount': warrantyAmount,
+          },
+          error: function () {
+            $.colorbox({
+              scrolling:false,
+              html: "<div class='alertbox-lrg p-2 d-flex align-items-center flex-wrap h-100'><div><h3>Sorry, we are having trouble providing you with available times. Please try it again later</h3><div><button class='btn-nav-sml btn w-25 mt-1 text-center bg-primary text-white' onclick='$.colorbox.close()'>Okay</button></div></div></div>"
+            });
+            return false;
+          },
+          success: function (data) {
+            var response = JSON.parse(JSON.stringify(data));
+            if (response.error == true) {
+              $.colorbox({
+                scrolling:false,
+                html: "<div class='alertbox-lrg p-2 d-flex align-items-center flex-wrap h-100'><div><h3>" + response.error_message + "</h3><div><button class='btn-nav-sml btn w-25 mt-1 text-center bg-primary text-white' onclick='$.colorbox.close()'>Okay</button></div></div></div>"
+              });
+            } else {
+              //$('#snc-warranty-plan').html(response.error_message);
+              $.colorbox({
+                scrolling:false,
+                html: "<div class='alertbox-lrg p-2 d-flex align-items-center flex-wrap h-100'><div><h3>" + response.error_message + "</h3><div><button class='btn-nav-sml btn w-25 mt-1 text-center bg-primary text-white' onclick='$.colorbox.close()'>Okay</button></div></div></div>"
+              });
+            }
+          }
+        });
+      }
+    });
+  });
+});
+</script><!-- checkout_confirmation -->
 </body>
 </html>
 <div id="debug_output" style="display:none"></div><script>console.log($("#debug_output").html());</script>
